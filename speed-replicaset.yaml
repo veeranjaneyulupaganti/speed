@@ -8,16 +8,16 @@ spec:
     matchLabels:
       app: speed
       version: "1.0"
-template:
-  metadata:
-    labels:
-      app: speed
-      version: "1.0"
-  spec:
-    containers:
-      - name: speed
-        image: techsriman/speed:1.0
-        ports:
-          - name: speedport
-            containerPort: 8080
-            protocol: TCP
+  template:
+    metadata:
+      labels:
+        app: speed
+        version: "1.0"
+    spec:
+      containers:
+        - name: speed
+          image: techsriman/speed:1.0
+          ports:
+            - name: speedport
+              containerPort: 8080
+              protocol: TCP
