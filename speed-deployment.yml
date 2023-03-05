@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: speedcontainer
-          image: techsriman/speeddep:1.0
+          image: techsriman/speeddep:2.0
           ports:
             - name: tomcatport
               containerPort: 8080
