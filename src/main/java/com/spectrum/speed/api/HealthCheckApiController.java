@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/health")
 public class HealthCheckApiController {
 
-	@GetMapping(value="/readiness.html", produces = { MediaType.TEXT_PLAIN_VALUE })
+	@GetMapping(value="/readiness.htm", produces = { MediaType.TEXT_PLAIN_VALUE })
 	@ResponseBody
 	public ResponseEntity<String> readinesCheck() {
 		return ResponseEntity.ok("ready");
 	}
-	
-	@GetMapping(value="/liveness.html", produces = { MediaType.TEXT_PLAIN_VALUE })
+
+	@GetMapping(value="/liveness.htm", produces = { MediaType.TEXT_PLAIN_VALUE })
 	@ResponseBody
 	public ResponseEntity<String> livenessCheck() {
 		return ResponseEntity.ok("live");
