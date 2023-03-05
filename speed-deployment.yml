@@ -7,18 +7,18 @@ spec:
   selector:
     matchLabels:
       app: speed
-      version: 1.0
+      version: "1.0"
   strategy:
     type: Recreate
   selector:
     matchLabels:
       app: speed
-      version: 1.0
+      version: "1.0"
   template:
     metadata: 
       labels:
         app: speed
-        version: 1.0
+        version: "1.0"
     spec:
       containers:
         - name: speedcontainer
