@@ -9,7 +9,11 @@ spec:
       app: speed
       version: "1.0"
   strategy:
-    type: Recreate
+    type: RollingUpdate
+      RollingUpdate:
+        MaxSurge: 1
+        MaxUnavalible: 0
+
   selector: 
     matchLabels:
       app: speed
